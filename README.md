@@ -38,7 +38,8 @@ If you want to change the default parameters, run this command on the terminal i
 
 ## Usage
 
-```public function index(Request $request)
+```
+    public function index(Request $request)
     {
         $collection = $this->repository->all();
         
