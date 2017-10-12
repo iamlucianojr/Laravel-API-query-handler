@@ -3,7 +3,7 @@ This Laravel package helps to handle a query request properly
 
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+In order to help
 
 ## Code Example
 
@@ -15,11 +15,37 @@ A short description of the motivation behind the creation and maintenance of the
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+Require this package with composer using the following command:
 
-## API Reference
+```bash
+composer require luciano-jr/laravel-api-query-handler
+```
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+After updating composer, add the service provider to the `providers` array in `config/app.php`
+
+```php
+Luciano-Jr\LaravelAPIQueryHandler\Services\ServiceProvider::class,
+```
+
+### Configuration File
+
+**If you use Lumen please skip this step**
+
+If you want to change the default parameters, run this command on the terminal in order to publish the vendor config file:
+
+`php artisan vendor:publish --provider="Luciano-Jr\LaravelApiQueryHandler\Services\ServiceProvider"`
+
+
+## Usage
+
+```public function index(Request $request)
+    {
+        $collection = $this->repository->all();
+        
+        $collectionHandler = new CollectionHandler($collection, $request);
+        $collectionHandler->handle();
+    }
+```
 
 ## Tests
 
