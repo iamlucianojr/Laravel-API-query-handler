@@ -1,0 +1,34 @@
+{
+    "name": "luciano-jr/laravel-api-query-handler",
+    "description": "Laravel API Query Handler Package.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "api", "query handler", "collection", "data", "eloquent"],
+    "authors": [
+        {
+            "name": "Luciano Junior",
+            "email": "luciano@lucianojr.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "illuminate/support": "^5.0.0",
+        "illuminate/database": "^5.0.0",
+        "illuminate/http": "^5.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Luciano-Jr\\LaravelApiQueryHandler\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Luciano-Jr\\LaravelApiQueryHandler\\Services\\ServiceProvider"
+            ]
+        }
+    }
+}
