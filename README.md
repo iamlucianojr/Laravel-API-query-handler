@@ -1,4 +1,7 @@
 # [WIP] Laravel API query handler
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bc686d5313d24b51b2bb9cc42dbdb534)](https://www.codacy.com/app/luciano/Laravel-API-query-handler?utm_source=github.com&utm_medium=referral&utm_content=luciano-jr/Laravel-API-query-handler&utm_campaign=badger)
+
 This Laravel package helps to handle a query request properly 
 
 ## Synopsis
