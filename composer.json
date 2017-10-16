@@ -27,7 +27,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\Luciano-Jr\\LaravelApiQueryHandler\\Services\\LaravelApiQueryHandlerSericeProvider"
+                "\\LucianoJr\\LaravelApiQueryHandler\\Services\\LaravelApiQueryHandlerSericeProvider"
             ]
         }
     }
