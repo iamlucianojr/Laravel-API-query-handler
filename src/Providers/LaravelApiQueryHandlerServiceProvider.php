@@ -15,10 +15,10 @@ class LaravelApiQueryHandlerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__ . '/../config/config.php';
+        $configPath = __DIR__ . '/../../config/config.php';
 
         $this->publishes([
-            $configPath => config_path('luciano-jr/laravel-api-query-handler.php'),
+            $configPath => config_path('laravel-api-query-handler.php'),
         ]);
     }
 }
