@@ -12,7 +12,5 @@ class UnknownFieldException extends Exception
      * @param string $string
      */
     public function __construct($string = 'Unknown field')
-    {
-
-    }
+    {}
 }

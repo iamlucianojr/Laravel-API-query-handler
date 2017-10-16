@@ -3,7 +3,7 @@
     "description": "Laravel API Query Handler Package.",
     "type": "library",
     "license": "MIT",
-    "keywords": ["laravel", "api", "query handler", "collection", "data", "eloquent"],
+    "keywords": ["laravel", "api", "query handler", "collection", "data", "eloquent", "L5.5"],
     "authors": [
         {
             "name": "Luciano Junior",
@@ -21,13 +21,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Luciano-Jr\\LaravelApiQueryHandler\\": "src"
+            "LucianoJr\\LaravelApiQueryHandler\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "\\Luciano-Jr\\LaravelApiQueryHandler\\Services\\ServiceProvider"
+                "\\Luciano-Jr\\LaravelApiQueryHandler\\Services\\LaravelApiQueryHandlerSericeProvider"
             ]
         }
     }
