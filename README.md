@@ -27,7 +27,7 @@ composer require luciano-jr/laravel-api-query-handler
 After updating composer, add the service provider to the `providers` array in `config/app.php`
 
 ```php
-Luciano-Jr\LaravelAPIQueryHandler\Services\ServiceProvider::class,
+LucianoJr\LaravelAPIQueryHandler\Providers\LaravelApiQueryHandlerServiceProvider::class,
 ```
 
 ### Configuration File
