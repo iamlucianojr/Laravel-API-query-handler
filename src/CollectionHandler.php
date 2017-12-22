@@ -45,7 +45,7 @@ class CollectionHandler
 
     public function __construct(Collection $collection, Request $request)
     {
-        $this->orderBy = config('api-query-builder.orderBy');
+        $this->orderBy = config('api-query-builder.orderBy', []);
 
         $this->perPage = config('api-query-builder.perPage', 15);
 
