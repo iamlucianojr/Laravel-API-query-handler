@@ -45,9 +45,12 @@ class CollectionHandler
 
     public function __construct(Collection $collection, Request $request)
     {
-        $this->orderBy = config('api-query-builder.orderBy', []);
+        $this->orderBy = config('laravel-api-query-handler.orderBy', [
+            'column' => 'id',
+            'direction' => 'asc'
+        ]);
 
-        $this->perPage = config('api-query-builder.perPage', 15);
+        $this->perPage = config('laravel-api-query-handler.perPage', 9);
 
         $this->uriParser = new UriHandler($request);
 
