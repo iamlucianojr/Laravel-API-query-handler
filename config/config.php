@@ -1,9 +1,11 @@
 <?php
+
 return [
-    'order_by' => [
+    'perPage' => 10,
+    'orderBy' => [
         [
-            'field' => 'id',
-            'direction' => 'asc'
-        ]
+            'column'    => 'id',
+            'direction' => 'desc',
+        ],
     ],
 ];
